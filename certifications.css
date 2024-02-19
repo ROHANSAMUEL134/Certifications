@@ -98,10 +98,10 @@ section{
     transition: transform 0.3s; 
     border-radius: 20px;
     margin: 20px;
+    position: relative;
 }
 
 .image:hover {
     transform: scale(1.5); 
-    
-    
+    z-index:999;
 }
