@@ -22,7 +22,8 @@ body {
 }
 
 header {
-    background-color:#E50914;
+    background-color:#0077A1;
+    border: 2px solid white;
     font-family:'Poppins', sans-serif;
     border-radius: 15px;
     margin:7px;
@@ -37,7 +38,7 @@ header {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #E50914;
+    color: #0077A1;
     padding: 7px 12px;
     font-size: 30px;
     border-radius: 15px;
@@ -45,7 +46,7 @@ header {
 }
 
 h2{
-    color: #E50914;
+    color: #fff;
     text-align: center;
     text-decoration: underline;
     font-family:'Ubuntu', sans-serif;
@@ -53,7 +54,7 @@ h2{
 }
 
 .navbar-custom{
-    background-color: #E50914;
+    background-color: #0077A1;
     border-radius: 10px;
 
 }
@@ -63,14 +64,26 @@ h2{
 }
 
 .hd-txt{
-    color: #000000 !important;
+    color: #fff !important;
     font-family:'Ubuntu', sans-serif;
     font-size: 25px;
     font-weight: 800;
+    position:relative;
 }
 
-.hd-txt:hover{
-    color:#FFFFFF !important;
+.hd-txt::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#fff;
+    position:absolute;
+    left: 8px;
+    bottom:12px;
+    transition: 0.6s;
+}
+
+.hd-txt:hover::after{ 
+    width: 100px;
 }
 
 .fon{
@@ -84,6 +97,7 @@ h2{
     border: 3px solid black !important; 
     border-radius: 10px;
     background-color: #FFFFFF;
+    transition: 0.3s ease-in-out;
 } 
 
 .navbar-toggler:hover{
@@ -92,7 +106,7 @@ h2{
 
 
 section{
-    margin-top:10px ;
+    margin-top:10px;
 }
 
 .image {
@@ -101,10 +115,13 @@ section{
     transition: transform 0.3s; 
     border-radius: 20px;
     margin: 20px;
-    position: relative;
+    position:relative;
+    border: 5px solid #0077A1;
 }
 
-.image:hover {
-    transform: scale(1.5); 
-    z-index:999;
+@media(min-width:950px){
+    .image:hover {
+        transform: scale(1.5); 
+        z-index:999;
+    }
 }
