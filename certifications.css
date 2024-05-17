@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
+    align-items: center;
   }
 
 #video-background {
@@ -119,6 +120,11 @@ section{
     border: 5px solid #0077A1;
 }
 
+@media(max-width:768px){
+    .image{
+        margin: 20px 0px;
+    }
+}
 @media(min-width:950px){
     .image:hover {
         transform: scale(1.5); 
