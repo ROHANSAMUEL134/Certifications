@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,39 +23,45 @@
         Your browser does not support the video tag.
     </video>
 
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-          <div class="container">
-              <a class="navbar-brand d-lg-none fon" href="#">Certifications</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto mr-auto">
-                      <li class="nav-item mr-4">
-                          <a class="nav-link hd-txt" href="#top">NPTEL</a>
-                      </li>
-                      <li class="nav-item mr-4">
-                          <a class="nav-link hd-txt" href="#intr-clg">Inter-College</a>
-                      </li>
-                      <li class="nav-item mr-4">
-                          <a class="nav-link hd-txt" href="#intrnshp">Internship</a>
-                      </li>
-                      <li class="nav-item mr-4">
-                          <a class="nav-link hd-txt" href="#crscpt">Course-Completion</a>
-                      </li>
-                      <li class="nav-item mr-4">
-                          <a class="nav-link hd-txt" href="#lnkdn">LinkedIn</a>
-                      </li>
-                      <li class="nav-item mr-4">
-                          <a class="nav-link hd-txt" href="#othrs">Others</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-  </header>
+    <div class="header-container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                <div class="container">
+                    <a class="navbar-brand d-lg-none fon" href="#">Certifications</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hamburger-btn">
+                        <span class="hamburger-toggler-icon" id="hamburger-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link hd-txt" href="#top">NPTEL</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link hd-txt" href="#intr-clg">Inter-College</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link hd-txt" href="#intrnshp">Internship</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link hd-txt" href="#crscpt">Course-Completion</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link hd-txt" href="#lnkdn">LinkedIn</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link hd-txt" href="#othrs">Others</a>
+                        </li>
+                    </ul>
+                    </div>
+            </div>
+        </nav>
+        </header>
+    </div>
 
     <section id="top"></section>
     <br><br><br>
@@ -469,7 +474,13 @@
             </section>
 
         </div>
+        <div class="footer-container">
+            <footer>
+            <p id="footer-text">&copy; 2024 All rights reserved by Rohan Samuel J. </p>
+            </footer>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
