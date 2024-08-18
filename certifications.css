@@ -6,7 +6,7 @@ html{
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color: #000;
     align-items: center;
   }
@@ -22,16 +22,18 @@ body {
     z-index: -1;
 }
 
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
 header {
     background-color:#0077A1;
     border: 2px solid white;
     font-family:'Poppins', sans-serif;
     border-radius: 15px;
-    margin:7px;
-    margin-left: 15px;
-    margin-top: 1px;
     position: fixed;
-    width: 98%;
+    width: 95%;
     z-index: 999;
 }
 
@@ -95,15 +97,34 @@ h2{
 }
 
 .navbar-toggler{
-    border: 3px solid black !important; 
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    transition: 0.3s ease-in-out;
-} 
+    border: none;
+}
 
-.navbar-toggler:hover{
-    transform: scale(1.2);
-} 
+.navbar-toggler:focus {
+    outline: none; 
+}
+
+.hamburger-toggler-icon .bar {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+
 
 
 section{
@@ -118,6 +139,26 @@ section{
     margin: 20px;
     position:relative;
     border: 5px solid #0077A1;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    height: 35px;
+    background-color: #0077A1;
+    padding-top: 2px;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    bottom:6px;
+    width: 95%;
+    border: 2px solid #fff;
+    z-index: 999;
 }
 
 @media(max-width:768px){
