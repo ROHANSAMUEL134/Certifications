@@ -1,3 +1,3 @@
-Live hosted Link : https://comfy-platypus-b85991.netlify.app/
+Live hosted Link : https://rohan-samuel-certifications.netlify.app/
 Tools used : HTML & CSS.
 # 🏆 Certification Showcase Repository.
