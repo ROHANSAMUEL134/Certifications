@@ -125,8 +125,6 @@ h2{
     transform: translateY(-10px) rotate(45deg);
 }
 
-
-
 section{
     margin-top:10px;
 }
@@ -139,6 +137,12 @@ section{
     margin: 20px;
     position:relative;
     border: 5px solid #0077A1;
+}
+
+.double-img-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
 }
 
 .footer-container{
